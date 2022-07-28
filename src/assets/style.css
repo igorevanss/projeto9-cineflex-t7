@@ -12,21 +12,22 @@
   padding: 24px;
 }
 
-header {
+.header {
   width: 100vw;
   height: 67px;
   position: fixed;
   left: 0px;
   top: 0px;
   background-color: #C3CFD9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-header h1 {
+.header h1 {
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
-  text-align: center;
-  margin-top: 18px;
   color: #E8833A;
 }
 
@@ -98,19 +99,20 @@ header h1 {
   color: #FFFFFF;
 }
 
-footer {
+.footer {
   width: 100vw;
   height: 117px;
   position: fixed;
   left: 0px;
   bottom: 0px;
   background-color: #DFE6ED;
-  border: 1px solid #9EADBA;
   display: flex;
+  align-items: center;
+  gap: 14px;
   padding: 10px;
 }
 
-footer div {
+.footer div {
   width: 64px;
   height: 89px;
   background-color: #FFFFFF;
@@ -119,12 +121,12 @@ footer div {
   padding: 8px;
 }
 
-footer div img {
+.footer div img {
   width: 100%;
   height: 100%;
 }
 
-footer p {
+.footer p {
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
