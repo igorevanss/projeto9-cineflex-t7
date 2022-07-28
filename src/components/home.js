@@ -1,4 +1,3 @@
-import movie1 from '../assets/images/image3.png'
 import List from './list'
 
 export default function Home() {

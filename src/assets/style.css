@@ -8,11 +8,8 @@
 #root {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: #fff;
+  padding: 24px;
 }
 
 header {
@@ -35,13 +32,14 @@ header h1 {
 
 .page-title {
   margin-bottom: 34px;
-  margin-top: 52px;
+  margin-top: 80px;
 }
 
 .page-title p {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
+  text-align: center;
   color: #293845;
 }
 
@@ -55,6 +53,7 @@ header h1 {
 }
 
 .movies {
+  width: 100vw;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -64,4 +63,70 @@ header h1 {
 .movie img {
   width: 100%;
   height: 100%;
+}
+
+.schedule {
+  margin-bottom: 22px;
+}
+
+.schedule p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #293845;
+  margin-bottom: 22px;
+}
+
+.squares {
+  display: flex;
+  gap: 8px;
+}
+
+.square {
+  width: 83px;
+  height: 43px;
+  background-color: #E8833A;
+  border-radius: 3px;
+}
+
+.square p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 12px;
+  color: #FFFFFF;
+}
+
+footer {
+  width: 100vw;
+  height: 117px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background-color: #DFE6ED;
+  border: 1px solid #9EADBA;
+  display: flex;
+  padding: 10px;
+}
+
+footer div {
+  width: 64px;
+  height: 89px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 8px;
+}
+
+footer div img {
+  width: 100%;
+  height: 100%;
+}
+
+footer p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  color: #293845;
 }
