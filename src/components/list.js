@@ -13,50 +13,32 @@ export default function List() {
       setItems(response.data)
     })
   }, [])
-	
+
   if (items.length === 0) {
     return <img src="loading.gif" />
   } else {
-		return (
-			<>
-				{items.map((value, index) => (
-					<Render key={index} id={value.id} url={value.posterURL}/>
-				))}
-			</>
-		)
-	}
-
- 
+    return (
+      <>
+        {items.map((value, index) => (
+          <div className="movie" key={index}>
+            <Link to={`/sessoes/${value.id}`}>
+              <img src={value.posterURL} alt="" />
+            </Link>
+          </div>
+        ))}
+      </>
+    )
+  }
 }
 
-function Render({id, url}) {
-	return (
-			<div className="movie">
-				<Link to={`/sessoes/${id}`}>
-					<img src={url} alt="" />
-				</Link>
-			</div>
-	)
-}
-
-
-
-
-
-
-
-
-
-
-{/* 
+{
+  /* 
 
 <Link to={`/sessoes/${id}`}>
 	<img src={url} />
 </Link>
 
 
-
-
 <div className="movie">
 <Link to='/Schedules'>
 	<img src={""} alt="" />
@@ -71,4 +53,5 @@ function Render({id, url}) {
 <Link to='/Schedules'>
 	<img src={""} alt="" />
 </Link>
-</div> */}
+</div> */
+}

@@ -5,6 +5,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  width: 100%;
+}
+
 #root {
   width: 100%;
   height: 100vh;
@@ -55,14 +59,14 @@
 }
 
 .movie:last-of-type {
-  margin-bottom: 30px;
+  margin-bottom: 37px;
 }
 
 .movies {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 37px;
 }
 
 .movie img {
