@@ -1,11 +1,12 @@
-export default function Footer() {
+export default function Footer({footerInfo}) {
+
   return (
     <div className="footer">
       <div>
-        <img src="" />
+        <img src={footerInfo.posterURL} />
       </div>
       <p>
-      Enola Holmes
+      {footerInfo.title}
       </p>
     </div>
   )
